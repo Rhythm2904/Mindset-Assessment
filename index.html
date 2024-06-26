@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="assessment-title" id="assessment-title">Are you Disillusioned?</div>
+    </header>
+    <main class="main">
+        <div class="container assessment">
+            <!-- Category Progress Bars -->
+            <div class="category-bars">
+                <div class="category-bar">
+                    <div class="bar idealistic" style="width: 0%;"></div>
+                    <span class="category-title">IDEALISTIC</span>
+                </div>
+                <div class="category-bar">
+                    <div class="bar disillusioned" style="width: 0%;"></div>
+                    <span class="category-title">DISILLUSIONED</span>
+                </div>
+                <div class="category-bar">
+                    <div class="bar cynical" style="width: 0%;"></div>
+                    <span class="category-title">CYNICAL</span>
+                </div>
+                <div class="category-bar">
+                    <div class="bar hopeful" style="width: 0%;"></div>
+                    <span class="category-title">HOPEFUL</span>
+                </div>
+            </div>
+
+            <!-- Question and Answer Slider -->
+            <div class="question">
+                <p id="questionNumber" class="question-number"></p>
+                <p id="questionText">I have ambitious aims of making a difference.</p>
+            </div>
+            <div class="slider-container">
+                <input type="range" min="0" max="4" value="0" class="slider">
+                <div class="labels">
+                    <span>Strongly Disagree</span>
+                    <span>Disagree</span>
+                    <span>Neutral</span>
+                    <span>Agree</span>
+                    <span>Strongly Agree</span>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="navigation">
+                <button id="prevBtn" type="button" >Prev</button>
+                <button id="nextBtn" type="button">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

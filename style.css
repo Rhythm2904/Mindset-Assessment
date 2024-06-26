@@ -1,0 +1,201 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-bars {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.category-bar {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.bar {
+    height: 25px;
+    border-radius: 12px;
+    width: 0%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease-in-out; /* Animation for progress bar */
+}
+
+.idealistic { background-color: #20adb4; }
+.disillusioned { background-color: #e91e63; }
+.cynical { background-color: #ffc107; }
+.hopeful { background-color: #4caf50; }
+
+.category-title {
+    display: block;
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.question {
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.slider-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    background: #ddd;
+    outline: none;
+    border-radius: 7.5px;
+    transition: background 0.3s ease-in-out; /* Animation for slider */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #333;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out; /* Animation for slider thumb */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #333;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out; /* Animation for slider thumb */
+}
+
+.slider:hover {
+    background: #ccc;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: #555;
+}
+
+.slider::-moz-range-thumb:hover {
+    background: #555;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation button:hover {
+    background-color: #ddd;
+}
+header {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    height: 105px;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+header {
+    unicode-bidi: isolate;
+}
+header .assessment-title {
+    color: #e74b16;
+    flex: 1 1 auto;
+    font-family: futura-pt, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .category-bar {
+        margin: 0 5px;
+    }
+
+    .navigation button {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .labels span {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .category-bar {
+        margin: 0 2px;
+    }
+
+    .navigation button {
+        padding: 8px;
+        margin: 3px;
+        font-size: 0.9em;
+    }
+
+    .labels span {
+        font-size: 0.7em;
+    }
+
+    .question {
+        font-size: 1em;
+    }
+}
