@@ -72,7 +72,7 @@ body, html {
     background: #ddd;
     outline: none;
     border-radius: 7.5px;
-    transition: background 0.3s ease-in-out; /* Animation for slider */
+    transition: background 0.3s ease-in-out; 
 }
 
 .slider::-webkit-slider-thumb {
@@ -84,7 +84,7 @@ body, html {
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease-in-out; /* Animation for slider thumb */
+    transition: background 0.3s ease-in-out;
 }
 
 .slider::-moz-range-thumb {
@@ -94,7 +94,7 @@ body, html {
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease-in-out; /* Animation for slider thumb */
+    transition: background 0.3s ease-in-out;
 }
 
 .slider:hover {
@@ -142,7 +142,7 @@ header {
 header {
     unicode-bidi: isolate;
 }
-header .assessment-title {
+header .Title {
     color: #e74b16;
     flex: 1 1 auto;
     font-family: futura-pt, sans-serif;
